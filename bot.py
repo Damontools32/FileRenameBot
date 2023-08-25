@@ -25,7 +25,7 @@ if __name__ == "__main__" :
         bot_token=Config.TG_BOT_TOKEN,
         api_id=Config.APP_ID,
         api_hash=Config.API_HASH,
-        plugins=plugins
+        plugins=/content/FileRenameBot/plugins
     )
     Config.AUTH_USERS.add(861055237)
     app.run()
