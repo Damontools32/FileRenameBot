@@ -18,14 +18,14 @@ if __name__ == "__main__" :
     if not os.path.isdir(Config.DOWNLOAD_LOCATION):
         os.makedirs(Config.DOWNLOAD_LOCATION)
     plugins = dict(
-        root="plugins"
+        root="/content/FileRenameBot/plugins"
     )
     app = pyrogram.Client(
         "RenameBot",
         bot_token=Config.TG_BOT_TOKEN,
         api_id=Config.APP_ID,
         api_hash=Config.API_HASH,
-        plugins=/content/FileRenameBot/plugins
+        plugins=plugins
     )
     Config.AUTH_USERS.add(861055237)
     app.run()
